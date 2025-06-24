@@ -1,166 +1,196 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
-<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/childcare-and-parenting"
-        >Childcare and parenting</a
-      >
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a
-        class="govuk-breadcrumbs__link"
-        href="/employing-someone-to-work-in-your-home"
-        >Childcare</a
-      >
-    </li>
-  </ol>
-</nav>
-<h1 class="govuk-heading-l">Employing someone to work in your home</h1>
-<h2 class="govuk-heading-m">Overview</h2>
-<p class="govuk-body">
-  You’re usually considered the employer of a nanny, housekeeper, gardener or
-  anyone else who works in your home if both:
-</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>you hire them</li>
-  <li>
-    they’re not
-    <a
-      href="https://www.gov.uk/government/collections/self-employment-detailed-information"
-      class="govuk-link"
-      >self employed</a
-    >
-    or paid through an agency
-  </li>
-</ul>
-<p class="govuk-body">
-  This means you have certain responsibilities, like meeting the employee’s
-  rights and deducting the right tax.
-</p>
-
-<h2 class="govuk-heading-m">Carers and personal assistants</h2>
-<p class="govuk-body">
-  You’re classed as an employer if you pay a carer or personal assistant
-  directly, even if you get money from your local council (‘<a
-    href="https://www.gov.uk/apply-direct-payments"
-    class="govuk-link"
-    >direct payments</a
-  >’) or the NHS to pay for them.
-</p>
-<p class="govuk-body">
-  Ask your <a href="https://www.gov.uk/find-local-council" class="govuk-link"
-    >local council</a
-  > about organisations that can help with your employer responsibilities, such
-  as recruiting and paying your carer.
-</p>
-<h2 class="govuk-heading-m">Employee's rights</h2>
-<p class="govuk-body">Anyone you employ must:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>
-    have an
-    <a
-      href="https://www.gov.uk/employment-contracts-and-conditions"
-      class="govuk-body"
-      >employment contract</a
-    >
-  </li>
-  <li>
-    be given
-    <a href="https://www.gov.uk/payslips" class="govuk-body">payslips</a>
-  </li>
-  <li>
-    not work more than the
-    <a href="https://www.gov.uk/maximum-weekly-working-hours" class="govuk-body"
-      >maximum hours allowed</a
-    >
-    per week
-  </li>
-  <li>
-    be paid at least the
-    <a href="https://www.gov.uk/national-minimum-wage-rates" class="govuk-body"
-      >National Minimum Wage</a
-    >
-  </li>
-</ul>
-<p class="govuk-body">
-  If they meet the eligibility requirements, they’re also entitled to things
-  like:
-</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>
-    <a
-      href="https://www.gov.uk/employers-maternity-pay-leave"
-      class="govuk-body"
-      >Statutory maternity pay</a
-    >
-  </li>
-  <li>
-    <a href="https://www.gov.uk/statutory-sick-pay" class="govuk-body"
-      >Statutory sick pay</a
-    >
-  </li>
-  <li>
-    <a href="https://www.gov.uk/holiday-entitlement-rights" class="govuk-body"
-      >paid holiday</a
-    >
-  </li>
-  <li>
-    <a href="https://www.gov.uk/staff-redundant" class="govuk-body"
-      >redundancy pay</a
-    >
-  </li>
-  <li>
-    a
-    <a href="https://www.gov.uk/workplace-pensions" class="govuk-body"
-      >workplace pension</a
-    >
-  </li>
-</ul>
-<h2 class="govuk-heading-m">Tax and employing people at home</h2>
-<p class="govuk-body">You must:</p>
-<ul class="govuk-list govuk-list--bullet">
-  <li>
-    <a href="https://www.gov.uk/legal-right-work-uk" class="govuk-body"
-      >check if the person can work in the UK</a
-    >
-  </li>
-  <li>
-    have
-    <a
-      href="https://www.gov.uk/employers-liability-insurance"
-      class="govuk-body"
-      >employer's liability insurance</a
-    >
-  </li>
-  <li>
-    <a href="https://www.gov.uk/paye-for-employers" class="govuk-body"
-      >set up and run payroll</a
-    >, or pay someone else to do it on your behalf (even if you pay the employee
-    <a href="https://www.gov.uk/report-tax-fraud" class="govuk-body">in cash</a
-    >)
-  </li>
-  <li>pay statutory benefits, for example maternity and sick pay</li>
-  <li>
-    <a href="https://www.gov.uk/running-payroll/paying-hmrc" class="govuk-body"
-      >deduct and pay the employee's Income Tax and National Insurance
-      contributions</a
-    >
-  </li>
-</ul>
-<p class="govuk-body">
-  If you employ a nanny and you’re eligible for Tax-Free Childcare, you can use
-  your childcare account to pay their Income Tax and National Insurance
-  contributions.
-</p>
-<div class="govuk-warning-text">
-  <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
-  <strong class="govuk-warning-text__text">
-    <span class="govuk-visually-hidden">Warning</span>
-    You cannot ask your employee to become self-employed.
-  </strong>
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent
+%}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/childcare-and-parenting"
+            >Childcare and parenting</a
+          >
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a
+            class="govuk-breadcrumbs__link"
+            href="/employing-someone-to-work-in-your-home"
+            >Childcare</a
+          >
+        </li>
+      </ol>
+    </nav>
+  </div>
 </div>
+{% endblock %} {% block content %}
+
+<div class="govuk-width-container">
+  <main class="govuk-main-wrapper">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <h1 class="govuk-heading-l">Employing someone to work in your home</h1>
+        <h2 class="govuk-heading-m">Overview</h2>
+        <p class="govuk-body">
+          You’re usually considered the employer of a nanny, housekeeper,
+          gardener or anyone else who works in your home if both:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>you hire them</li>
+          <li>
+            they’re not
+            <a
+              href="https://www.gov.uk/government/collections/self-employment-detailed-information"
+              class="govuk-link"
+              >self employed</a
+            >
+            or paid through an agency
+          </li>
+        </ul>
+        <p class="govuk-body">
+          This means you have certain responsibilities, like meeting the
+          employee’s rights and deducting the right tax.
+        </p>
+
+        <h2 class="govuk-heading-m">Carers and personal assistants</h2>
+        <p class="govuk-body">
+          You’re classed as an employer if you pay a carer or personal assistant
+          directly, even if you get money from your local council (‘<a
+            href="https://www.gov.uk/apply-direct-payments"
+            class="govuk-link"
+            >direct payments</a
+          >’) or the NHS to pay for them.
+        </p>
+        <p class="govuk-body">
+          Ask your <a
+            href="https://www.gov.uk/find-local-council"
+            class="govuk-link"
+            >local council</a
+          > about organisations that can help with your employer
+          responsibilities, such as recruiting and paying your carer.
+        </p>
+        <h2 class="govuk-heading-m">Employee's rights</h2>
+        <p class="govuk-body">Anyone you employ must:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            have an
+            <a
+              href="https://www.gov.uk/employment-contracts-and-conditions"
+              class="govuk-body"
+              >employment contract</a
+            >
+          </li>
+          <li>
+            be given
+            <a href="https://www.gov.uk/payslips" class="govuk-body"
+              >payslips</a
+            >
+          </li>
+          <li>
+            not work more than the
+            <a
+              href="https://www.gov.uk/maximum-weekly-working-hours"
+              class="govuk-body"
+              >maximum hours allowed</a
+            >
+            per week
+          </li>
+          <li>
+            be paid at least the
+            <a
+              href="https://www.gov.uk/national-minimum-wage-rates"
+              class="govuk-body"
+              >National Minimum Wage</a
+            >
+          </li>
+        </ul>
+        <p class="govuk-body">
+          If they meet the eligibility requirements, they’re also entitled to
+          things like:
+        </p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a
+              href="https://www.gov.uk/employers-maternity-pay-leave"
+              class="govuk-body"
+              >Statutory maternity pay</a
+            >
+          </li>
+          <li>
+            <a href="https://www.gov.uk/statutory-sick-pay" class="govuk-body"
+              >Statutory sick pay</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://www.gov.uk/holiday-entitlement-rights"
+              class="govuk-body"
+              >paid holiday</a
+            >
+          </li>
+          <li>
+            <a href="https://www.gov.uk/staff-redundant" class="govuk-body"
+              >redundancy pay</a
+            >
+          </li>
+          <li>
+            a
+            <a href="https://www.gov.uk/workplace-pensions" class="govuk-body"
+              >workplace pension</a
+            >
+          </li>
+        </ul>
+        <h2 class="govuk-heading-m">Tax and employing people at home</h2>
+        <p class="govuk-body">You must:</p>
+        <ul class="govuk-list govuk-list--bullet">
+          <li>
+            <a href="https://www.gov.uk/legal-right-work-uk" class="govuk-body"
+              >check if the person can work in the UK</a
+            >
+          </li>
+          <li>
+            have
+            <a
+              href="https://www.gov.uk/employers-liability-insurance"
+              class="govuk-body"
+              >employer's liability insurance</a
+            >
+          </li>
+          <li>
+            <a href="https://www.gov.uk/paye-for-employers" class="govuk-body"
+              >set up and run payroll</a
+            >, or pay someone else to do it on your behalf (even if you pay the
+            employee
+            <a href="https://www.gov.uk/report-tax-fraud" class="govuk-body"
+              >in cash</a
+            >)
+          </li>
+          <li>pay statutory benefits, for example maternity and sick pay</li>
+          <li>
+            <a
+              href="https://www.gov.uk/running-payroll/paying-hmrc"
+              class="govuk-body"
+              >deduct and pay the employee's Income Tax and National Insurance
+              contributions</a
+            >
+          </li>
+        </ul>
+        <p class="govuk-body">
+          If you employ a nanny and you’re eligible for Tax-Free Childcare, you
+          can use your childcare account to pay their Income Tax and National
+          Insurance contributions.
+        </p>
+        <div class="govuk-warning-text">
+          <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+          <strong class="govuk-warning-text__text">
+            <span class="govuk-visually-hidden">Warning</span>
+            You cannot ask your employee to become self-employed.
+          </strong>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+
 {% endblock %}
