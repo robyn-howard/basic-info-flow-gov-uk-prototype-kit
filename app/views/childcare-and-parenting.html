@@ -1,0 +1,41 @@
+{% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
+
+<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+  <ol class="govuk-breadcrumbs__list">
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="#">Home</a>
+    </li>
+    <li class="govuk-breadcrumbs__list-item">
+      <a class="govuk-breadcrumbs__link" href="/childcare-and-parenting"
+        >Childcare and parenting</a
+      >
+    </li>
+  </ol>
+</nav>
+
+<h1 class="govuk-heading-l">Childcare</h1>
+<p class="govuk-body">
+  Finding childcare, financial support for childcare and childcare for
+  school-age children
+</p>
+
+<h2 class="govuk-heading-m">Find childcare</h2>
+<ul class="govuk-list">
+  <li>
+    <a class="govuk-link" href="/employing-someone-to-work-in-your-home"
+      >Employing someone to work in your home</a
+    >
+  </li>
+  <li>
+    <a class="govuk-link" href="/the-law-on-leaving-your-child-on-their-own"
+      >The law on leaving your child on their own</a
+    >
+  </li>
+  <li>
+    <a class="govuk-link" href="/unpaid-parental-leave"
+      >Unpaid parental leave</a
+    >
+  </li>
+</ul>
+{% endblock %}
