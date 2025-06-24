@@ -1,24 +1,30 @@
 {% extends "layouts/main.html" %} {% block pageTitle %} GOV.UK page template –
-{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block content %}
-<nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
-  <ol class="govuk-breadcrumbs__list">
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="#">Home</a>
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a class="govuk-breadcrumbs__link" href="/childcare-and-parenting"
-        >Childcare and parenting</a
-      >
-    </li>
-    <li class="govuk-breadcrumbs__list-item">
-      <a
-        class="govuk-breadcrumbs__link"
-        href="/employing-someone-to-work-in-your-home"
-        >Childcare</a
-      >
-    </li>
-  </ol>
-</nav>
+{{ serviceName }} – GOV.UK Prototype Kit {% endblock %} {% block beforeContent
+%}
+<div class="govuk-grid-row">
+  <div class="govuk-grid-column-two-thirds">
+    <nav class="govuk-breadcrumbs" aria-label="Breadcrumb">
+      <ol class="govuk-breadcrumbs__list">
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="#">Home</a>
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a class="govuk-breadcrumbs__link" href="/childcare-and-parenting"
+            >Childcare and parenting</a
+          >
+        </li>
+        <li class="govuk-breadcrumbs__list-item">
+          <a
+            class="govuk-breadcrumbs__link"
+            href="/employing-someone-to-work-in-your-home"
+            >Childcare</a
+          >
+        </li>
+      </ol>
+    </nav>
+  </div>
+</div>
+{% endblock %} {% block content %}
 
 <h1 class="govuk-heading-l">The law on leaving your child on their own</h1>
 
